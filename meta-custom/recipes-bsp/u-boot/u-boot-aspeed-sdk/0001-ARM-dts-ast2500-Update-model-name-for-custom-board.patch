@@ -3,6 +3,8 @@ From: Wilson Li <44079152+WilsonLi69@users.noreply.github.com>
 Date: Fri, 24 Jul 2026 16:26:32 +0800
 Subject: [PATCH] ARM: dts: ast2500: Update model name for custom board
 
+Upstream-Status: Inappropriate [custom board specific]
+
 ---
  arch/arm/dts/ast2500-evb.dts | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
