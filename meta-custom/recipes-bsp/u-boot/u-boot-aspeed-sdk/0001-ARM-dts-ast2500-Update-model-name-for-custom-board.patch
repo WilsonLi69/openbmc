@@ -1,0 +1,22 @@
+From b0740f138619da0eec7b56b7330821fc359eb409 Mon Sep 17 00:00:00 2001
+From: Wilson Li <44079152+WilsonLi69@users.noreply.github.com>
+Date: Fri, 24 Jul 2026 16:26:32 +0800
+Subject: [PATCH] ARM: dts: ast2500: Update model name for custom board
+
+---
+ arch/arm/dts/ast2500-evb.dts | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/arch/arm/dts/ast2500-evb.dts b/arch/arm/dts/ast2500-evb.dts
+index 950ae57e14..c23f9eaeee 100644
+--- a/arch/arm/dts/ast2500-evb.dts
++++ b/arch/arm/dts/ast2500-evb.dts
+@@ -3,7 +3,7 @@
+ #include "ast2500-u-boot.dtsi"
+ 
+ / {
+-	model = "AST2500 EVB";
++	model = "Custom Board";
+ 	compatible = "aspeed,ast2500-evb", "aspeed,ast2500";
+ 
+ 	memory {
