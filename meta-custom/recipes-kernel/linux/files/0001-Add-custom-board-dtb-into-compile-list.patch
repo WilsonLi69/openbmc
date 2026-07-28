@@ -1,0 +1,23 @@
+From 10d6b2b1d371f045b5e7dfd73c37eecced013e00 Mon Sep 17 00:00:00 2001
+From: OpenEmbedded <oe.patch@oe>
+Date: Tue, 28 Jul 2026 00:57:15 +0000
+Subject: [PATCH] Add custom board dtb into compile list
+
+Upstream-Status: Inappropriate [custom board specific]
+
+---
+ arch/arm/boot/dts/aspeed/Makefile | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/arch/arm/boot/dts/aspeed/Makefile b/arch/arm/boot/dts/aspeed/Makefile
+index b3170fdd3096..1bf02e7c3ac0 100644
+--- a/arch/arm/boot/dts/aspeed/Makefile
++++ b/arch/arm/boot/dts/aspeed/Makefile
+@@ -1,6 +1,7 @@
+ # SPDX-License-Identifier: GPL-2.0
+ dtb-$(CONFIG_ARCH_ASPEED) += \
+ 	aspeed-ast2500-evb.dtb \
++	aspeed-ast2500-custom-board.dtb \
+ 	aspeed-ast2600-evb-a1.dtb \
+ 	aspeed-ast2600-evb.dtb \
+ 	aspeed-bmc-amd-daytonax.dtb \

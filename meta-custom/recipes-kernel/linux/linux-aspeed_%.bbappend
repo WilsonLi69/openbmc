@@ -1,6 +1,7 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 SRC_URI += "file://aspeed-ast2500-custom-board.dts \
+            file://0001-Add-custom-board-dtb-into-compile-list.patch \
             "
 
 do_configure:append() {
