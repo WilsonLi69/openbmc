@@ -1,0 +1,7 @@
+#include "aspeed-ast2500-evb.dts"
+
+/ {
+  model = "AST2500 Custom Board";
+  compatible = "custom,ast2500-custom-board",
+    "aspeed,ast2500";
+};
