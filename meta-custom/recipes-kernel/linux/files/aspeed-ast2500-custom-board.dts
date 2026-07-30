@@ -12,7 +12,7 @@
         status = "okay";
         m25p,fast-read;
         label = "bmc";
-
+        /delete-node/ partitions;
         partitions {
             compatible = "fixed-partitions";
             #address-cells = <1>;
@@ -48,3 +48,4 @@
         };
     };
 };
+
