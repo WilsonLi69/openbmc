@@ -1,0 +1,30 @@
+{
+    "gpio_configs": {
+        "power_config": {
+            "power_good_in": "POWER_GOOD",
+            "power_up_outs": [
+                {"name": "POWER_BUTTON", "polarity": true}
+            ],
+            "reset_outs": [
+                {"name": "RESET_BUTTON", "polarity": true}
+            ]
+        }
+    },
+    "gpio_definitions": [
+        {
+            "name": "POWER_BUTTON",
+            "pin": "D0",
+            "direction": "out"
+        },
+        {
+            "name": "RESET_BUTTON",
+            "pin": "D2",
+            "direction": "out"
+        },
+        {
+            "name": "POWER_GOOD",
+            "pin": "D6",
+            "direction": "in"
+        }
+    ]
+}
