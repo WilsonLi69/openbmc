@@ -1,0 +1,11 @@
+[Unit]
+Description=Apply Custom Firewall Rules
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/firewall.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
