@@ -79,3 +79,12 @@
 &mac1 {
   status = "disabled";
 };
+
+&i2c3 {
+  status = "okay";
+
+  lm95241@2b {
+    compatible = "national,lm95241";
+    reg = <0x2b>;
+  };
+};
