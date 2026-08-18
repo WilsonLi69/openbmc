@@ -1,0 +1,41 @@
+[
+  {
+    "Name": "custom-board",
+    "Probe": "TRUE",
+    "Type": "Board",
+    "Exposes": [
+      {
+        "Name": "Board_Temp",
+        "Type": "LM95241",
+        "Address": "0x2B",
+        "Bus": 3,
+        "Thresholds": [
+          {
+            "Direction": "greater than",
+            "Name": "upper critical",
+            "Severity": 1,
+            "Value": 105
+          },
+          {
+            "Direction": "greater than",
+            "Name": "upper non critical",
+            "Severity": 0,
+            "Value": 95
+          },
+          {
+            "Direction": "less than",
+            "Name": "lower non critical",
+            "Severity": 0,
+            "Value": 5
+          },
+          {
+            "Direction": "less than",
+            "Name": "lower critical",
+            "Severity": 1,
+            "Value": 0
+          }
+        ]
+      }
+    ]
+  }
+]
