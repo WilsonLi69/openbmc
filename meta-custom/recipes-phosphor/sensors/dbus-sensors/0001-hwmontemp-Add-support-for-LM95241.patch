@@ -1,0 +1,23 @@
+From 34bf3853b7ef3250b955feeba5e479ad0ca5e233 Mon Sep 17 00:00:00 2001
+From: Wilson Li <44079152+WilsonLi69@users.noreply.github.com>
+Date: Tue, 18 Aug 2026 16:42:44 +0800
+Subject: [PATCH] hwmontemp: Add support for LM95241
+
+Upstream-Status: Inappropriate [custom board specific]
+
+---
+ src/hwmon-temp/HwmonTempMain.cpp | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/hwmon-temp/HwmonTempMain.cpp b/src/hwmon-temp/HwmonTempMain.cpp
+index fe4f5b8..68a113e 100644
+--- a/src/hwmon-temp/HwmonTempMain.cpp
++++ b/src/hwmon-temp/HwmonTempMain.cpp
+@@ -73,6 +73,7 @@ static const I2CDeviceTypeMap sensorTypes{
+     {"JC42", I2CDeviceType{"jc42", true}},
+     {"LM75A", I2CDeviceType{"lm75a", true}},
+     {"LM95234", I2CDeviceType{"lm95234", true}},
++    {"LM95241", I2CDeviceType{"lm95241", true}},
+     {"MAX31725", I2CDeviceType{"max31725", true}},
+     {"MAX31730", I2CDeviceType{"max31730", true}},
+     {"MAX6581", I2CDeviceType{"max6581", true}},
