@@ -1,0 +1,24 @@
+From f29bda2527b4f419790f5eb1e330573078480c4f Mon Sep 17 00:00:00 2001
+From: Wilson Li <44079152+WilsonLi69@users.noreply.github.com>
+Date: Wed, 19 Aug 2026 17:21:22 +0800
+Subject: [PATCH] obmcutil: Modify the source service of BootProgress
+
+Upstream-Status: Inappropriate [embedded specific]
+
+---
+ obmcutil | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/obmcutil b/obmcutil
+index ecaed6a..23947c5 100755
+--- a/obmcutil
++++ b/obmcutil
+@@ -452,7 +452,7 @@ function handle_cmd()
+             ;;
+         bootprogress)
+             OBJECT=$STATE_OBJECT/host$G_INSTANCE_ID
+-            SERVICE=$(mapper get-service "$OBJECT")
++            SERVICE=xyz.openbmc_project.Settings
+             INTERFACE=$STATE_INTERFACE.Boot.Progress
+             PROPERTY=BootProgress
+             state_query "$SERVICE" "$OBJECT" $INTERFACE $PROPERTY

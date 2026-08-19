@@ -1,0 +1,5 @@
+/xyz/openbmc_project/state/host0:
+  - Interface: xyz.openbmc_project.State.Boot.Progress
+    Properties:
+      BootProgress:
+        Default: Progress::ProgressStages::Unspecified
