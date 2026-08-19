@@ -1,0 +1,49 @@
+{
+  "gpio_configs": [
+    {
+      "Name": "PowerButton",
+      "LineName": "POWER_BUTTON",
+      "Type": "GPIO",
+      "Polarity": "ActiveLow"
+    },
+    {
+      "Name": "PowerOk",
+      "LineName": "POWER_GOOD",
+      "Type": "GPIO",
+      "Polarity": "ActiveHigh"
+    },
+    {
+      "Name": "ResetButton",
+      "LineName": "RESET_BUTTON",
+      "Type": "GPIO",
+      "Polarity": "ActiveLow"
+    },
+    {
+      "Name": "PowerOut",
+      "LineName": "POWER_OUT",
+      "Type": "GPIO",
+      "Polarity": "ActiveLow"
+    },
+    {
+      "Name": "ResetOut",
+      "LineName": "RESET_OUT",
+      "Type": "GPIO",
+      "Polarity": "ActiveLow"
+    },
+    {
+      "Name": "PostComplete",
+      "LineName": "POST_COMPLETE",
+      "Type": "GPIO",
+      "Polarity": "ActiveLow"
+    }
+  ],
+  "timing_configs": {
+    "PowerPulseMs": 200,
+    "ForceOffPulseMs": 15000,
+    "ResetPulseMs": 5500,
+    "PowerCycleMs": 10000,
+    "GracefulPowerOffS": 300,
+    "WarmResetCheckMs": 500,
+    "PowerOffSaveMs": 7000
+  }
+}
