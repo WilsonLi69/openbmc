@@ -4,18 +4,18 @@ DESCRIPTION = "A D-Bus server to control virtual LED via GPIO"
 LICENSE  = "MIT"
 LIC_FILES_CHKSUM = "file://COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"
 
-SRC_URI = " \
-    git://github.com/WilsonLi69/virtual-led-ctrl;branch=main;protocol=https \
-    file://virtual-led-ctrl.service \
-"
+SRC_URI = "git://github.com/WilsonLi69/virtual-led-ctrl;branch=main;protocol=https \
+           file://virtual-led-ctrl.service \
+           file://0001-Modify-virtual-led-pin-to-GPIOB7.patch \
+           "
 
-SRCREV = "9911905452e1f0d3164d42552b2c1b91db0c3b04"
+SRCREV = "4f25467695630dd7c395020fa19387d89dba031e"
 
 S = "${WORKDIR}/git"
 
 DEPENDS = " \
     sdbusplus \
-    phosphor-dbus-interfaces \
+    boost \
     libgpiod \
 "
 

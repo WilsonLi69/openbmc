@@ -1,0 +1,24 @@
+From 1c99d6a7720507161267170db1915426d8c9bc5d Mon Sep 17 00:00:00 2001
+From: Wilson Li <44079152+WilsonLi69@users.noreply.github.com>
+Date: Thu, 27 Aug 2026 16:47:37 +0800
+Subject: [PATCH] Modify virtual led pin to GPIOB7
+
+Upstream-Status: Inappropriate [embedded specific]
+
+---
+ src/main.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/main.cpp b/src/main.cpp
+index e55390a..8567618 100644
+--- a/src/main.cpp
++++ b/src/main.cpp
+@@ -164,7 +164,7 @@ int main()
+     sdbusplus::asio::object_server objectServer(systemBus);
+ 
+     // Instantiate LED controller
+-    VirtualLed led(io, objectServer, "gpiochip0", 0);
++    VirtualLed led(io, objectServer, "gpiochip0", 15); // unused pin GPIOB7
+ 
+     std::cout << "Virtual LED D-Bus Service is running..." << std::endl;
+ 

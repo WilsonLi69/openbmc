@@ -17,10 +17,17 @@
       "members": [
         {
           "Name": "identify",
-          "Action": "On",
+          "Action": "Blink",
+          "Priority": "Blink",
           "DutyOn": 50,
-          "Period": 1000,
-          "Priority": "On"
+          "Period": 1000
+        },
+        {
+          "Name": "virtual_test",
+          "Action": "Blink",
+          "Priority": "Blink",
+          "DutyOn": 50,
+          "Period": 1000
         }
       ]
     }
