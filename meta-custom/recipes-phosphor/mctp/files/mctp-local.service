@@ -1,0 +1,12 @@
+[Unit]
+Description=Setup Local MCTP Network for PLDM Loopback
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/mctp link set lo up
+ExecStart=/usr/bin/mctp addr add 8 dev lo
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
