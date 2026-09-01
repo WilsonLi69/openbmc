@@ -4,7 +4,10 @@ SRC_URI += "file://aspeed-ast2500-custom-board.dts \
             file://0001-Add-custom-board-dtb-into-compile-list.patch \
             "
 
-SRC_URI += "file://lm95241.cfg"
+SRC_URI += " \
+    file://lm95241.cfg \
+    file://mtcp.cfg \
+    "
 
 do_configure:append() {
     install -m 0644 \
