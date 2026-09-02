@@ -1,0 +1,37 @@
+{
+  "sensorPDRs": [
+    {
+      "pdrType": 4,
+      "entries": [
+        {
+          "type": 64,
+          "instance": 1,
+          "container": 0,
+          "parent_entity_path": "/xyz/openbmc_project/inventory/system/chassis",
+          "sensors": [
+            {
+              "set": {
+                "id": 1,
+                "size": 2,
+                "states": [
+                  1,
+                  9
+                ]
+              },
+              "dbus": {
+                "path": "/xyz/openbmc_project/sensors/temperature/Board_Temp",
+                "interface": "xyz.openbmc_project.Sensor.Threshold.Critical",
+                "property_name": "CriticalAlarmHigh",
+                "property_type": "bool",
+                "property_values": [
+                  false,
+                  true
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
